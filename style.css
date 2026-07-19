@@ -1,0 +1,286 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#0f172a;
+    color:white;
+}
+
+a{
+    text-decoration:none;
+}
+
+section{
+    padding:80px 10%;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+    background:#111827;
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    font-family:cursive;
+    font-size:32px;
+    font-weight:bold;
+}
+
+.nav_links{
+    font-size: 18px;
+    display:flex;
+    gap:50px;
+    list-style:none;
+}
+
+.nav_links a{
+    color:white;
+}
+
+.nav_links a:hover{
+    color:#0A66C2;
+    transition: 0.6s;
+}
+
+.btn{
+    background:#3b82f6;
+    color:white;
+    padding:12px 22px;
+    border-radius:8px;
+    font-weight:bold;
+    transition:all 0.3s ease;
+}
+
+.btn:hover{
+    background:#3e9768;
+    transform:translateY(-3px);
+    box-shadow:0 8px 20px rgba(59,130,246,0.4);
+}
+
+.hero{
+    position:relative;
+    height:90vh;
+    background:url("images/hero.png") center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.3);
+}
+
+.hero_content{
+    position:relative;
+    z-index:1;
+    max-width:700px;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    margin-bottom:30px;
+    line-height:1.7;
+}
+
+.speakers h2{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.speaker_grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+}
+
+.card{
+    background:#1e293b;
+    padding:20px;
+    border-radius:12px;
+}
+
+.card img{
+    width:100%;
+    height:530px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.track{
+    display:inline-block;
+    margin-top:15px;
+    background:#2563eb;
+    padding:5px 10px;
+    border-radius:20px;
+    font-size:14px;
+}
+
+.card h3{
+    margin:15px 0 8px;
+}
+
+.pricing{
+    text-align:center;
+}
+
+.subtitle{
+    margin-top:10px;
+    margin-bottom:40px;
+}
+
+.pricing_grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.price_card{
+    background:#1e293b;
+    padding:30px;
+    border-radius:15px;
+}
+
+.price_card h4{
+    font-size:40px;
+    margin:20px 0;
+}
+
+.price_card ul{
+    list-style:none;
+    margin-bottom:25px;
+}
+
+.price_card li{
+    margin:10px 0;
+}
+
+.price_card button{
+    padding:12px 20px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.featured{
+    background:#2563eb;
+    transform:scale(1.05);
+}
+
+.sponsors h2{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.sponsor_grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.sponsor_card{
+    background:#1e293b;
+    text-align:center;
+    padding: 7px;
+    border-radius:12px;
+    overflow:hidden;
+}
+
+.sponsor_card img{
+    width:100%;
+    height:120px;
+    border-radius: 12px;
+    object-fit:cover;
+    display:block;
+}
+
+footer{
+    background:#111827;
+    padding:40px 10%;
+}
+
+.footer_top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.socials{
+    display:flex;
+    gap:20px;
+}
+
+.socials a{
+    width:45px;
+    height:45px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#1e293b;
+    color:white;
+    border-radius:50%;
+    font-size:20px;
+    transition:0.3s;
+}
+
+.socials a:hover{
+    transform:translateY(-4px);
+}
+
+.socials .facebook:hover{
+    background:#1877F2;
+    box-shadow:0 0 15px #1877F2;
+}
+
+.socials .linkedin:hover{
+    background:#0A66C2;
+    box-shadow:0 0 15px #0A66C2;
+}
+
+.socials .twitter:hover{
+    background:#000000;
+    box-shadow:0 0 15px #ffffff55;
+}
+
+footer hr{
+    margin:25px 0;
+    border:none;
+    height:1px;
+    background:#374151;
+}
+
+footer p{
+    text-align:center;
+}
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .speaker_grid,
+    .pricing_grid,
+    .sponsor_grid{
+        grid-template-columns:1fr;
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
+}
