@@ -176,10 +176,6 @@ section{
     cursor:pointer;
 }
 
-.featured{
-    background:#2563eb;
-    transform:scale(1.05);
-}
 
 .sponsors h2{
     text-align:center;
